@@ -13,7 +13,7 @@ output: pdf_document
 3. You may knit to PDF, HTML, or Word (click on the drop-down menu for Knit to choose the file output type). 
 4. Before submitting your work, please make sure the knitted file is well organized, legible, and looks the way you expect!
 5. Please include the names of any classmates with whom you worked on this homework, as well as any external resources that you might have used.
-6. This homework assignment is **due on Friday, September 24, 2021 and should be submitted to Gradescope**.
+6. This homework assignment is **due on Friday, October 1, 2021 and should be submitted to Gradescope**.
 
 - *Collaborators:*
 
@@ -76,13 +76,13 @@ id_outbreak <- data.frame(case=c(rep(1, simulation[1]), rep(0, simulation[2]),
 
 #### Question ID 4. Poisson regression
 
-(a) Fit a Poisson regression model with only an intercept to these data. Remember to use the `glm` function and to specify `family` argument in the `glm` function as `poisson`. Assign the model fit to `outbreak_pois` and print the summary of the model fit.
+(a) Fit a Poisson regression model with winter festival as an explanatory variable to these data. Remember to use the `glm` function and to specify `family` argument in the `glm` function as `poisson`. Assign the model fit to `outbreak_pois` and print the summary of the model fit.
 
 ```{r}
 
 ```
 
-(b) What is the estimate of the intercept? Exponetiate this estimate. How does this compare to the quantities you calculated in Question ID 3? Interpret this value in context.
+(b) What is the estimate effect of winter festival? Exponetiate this estimate. How does this compare to the quantities you calculated in Question ID 3? Interpret this value in context.
 
 ```{r}
 
@@ -97,7 +97,7 @@ id_outbreak <- data.frame(case=c(rep(1, simulation[1]), rep(0, simulation[2]),
 
 #### Question ID 5. Binomial logistic regression
 
-(a) Fit a logistic regression model with only an intercept to these data. Remember to use the `glm` function and to specify `family` argument in the `glm` function as `binomial`. Assign the model fit to `outbreak_pois` and print the summary of the model fit.
+(a) Fit a logistic regression model with winter festival as an explanatory variable to these data. Remember to use the `glm` function and to specify `family` argument in the `glm` function as `binomial`. Assign the model fit to `outbreak_binom` and print the summary of the model fit.
 
 ```{r}
 
@@ -148,4 +148,4 @@ C. A function is a named block of instructions with a particular purpose.
 
 
 
-#### Question NSF 6. `rbinom(n = N_d, size = 1, prob = N_fest/N_d)` and `rbinom(size = 1, n = N_d, prob = N_fest/N_d)` no not give different outputs. Why?
+#### Question NSF 6. `rbinom(n = N_d, size = 1, prob = N_fest/N_d)` and `rbinom(size = 1, n = N_d, prob = N_fest/N_d)` do not give different outputs. Why?
