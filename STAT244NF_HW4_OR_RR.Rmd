@@ -103,7 +103,7 @@ id_outbreak <- data.frame(case=c(rep(1, simulation[1]), rep(0, simulation[2]),
 
 ```
 
-(b) What is the estimate of the intercept? Exponentiate this estimate. 
+(b) What is the estimate of the effect of winter festival? Exponentiate this estimate. 
 
 ```{r}
 
